@@ -27,8 +27,8 @@
         <div class="form-group row justify-content-center mt-5">
             <label for="selectCountry" class="col-sm-1 col-form-label">País</label>
             <div class="col-sm-4 col-md-3">
-                <select name="" id="country" class="form-control">
-                    <option name="Brazil" value="Brazil" selected="selected">Brasil</option>
+                <select name="" id="country" class="form-control" onchange="fetchData()">
+                    <option value="Brazil" selected="selected">Brasil</option>
                     <option value="China">China</option>
                     <option value="Italy">Itália</option>
                     <option value="Turkey">Turquia</option>
@@ -42,7 +42,7 @@
             <div class="col-md-12 col-12">
                 <div class="card">
                     <div class="card-header text-center">
-                        Casos de corona em <span id="countryName">NomePaís</span>
+                        Casos de corona em <span id="countryName">Brasil</span>
                     </div>
                 </div>
             </div>
