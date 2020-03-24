@@ -6,7 +6,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.get('/', function(req, res) {
-    res.render('/home');
+    res.render('index');
 });
 
 app.listen(7000, function (err) {
