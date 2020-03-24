@@ -1,11 +1,59 @@
 <%- include('complements/header.ejs') %>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <h1>Página inicial</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CoronaMetter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-group row justify-content-center mt-5">
+            <label for="selectCountry" class="col-sm-1 col-form-label">País</label>
+            <div class="col-sm-4 col-md-3">
+                <select name="" id="country" class="form-control">
+                    <option name="Brazil" value="Brazil" selected="selected">Brasil</option>
+                    <option value="China">China</option>
+                    <option value="Italy">Itália</option>
+                    <option value="Turkey">Turquia</option>
+                     
+                </select>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Casos de corona em <span id="countryName">NomePaís</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-12">
+                <div class="card-body">
+                    <canvas id="chart" height="180"></canvas>
+                </div>
+            </div>
+        </div>  
     </div>
+    
 </body>
 
 <%- include('complements/footer.ejs') %>
