@@ -28,17 +28,56 @@
             <label for="selectCountry" class="col-sm-1 col-form-label">País</label>
             <div class="col-sm-4 col-md-3">
                 <select name="" id="country" class="form-control" onchange="fetchData()">
+                    <option value="South Africa">Africa do Sul</option>
+                    <option value="Germany">Alemanha</option>
+                    <option value="Australia">Australia</option>
                     <option value="Brazil" selected="selected">Brasil</option>
                     <option value="China">China</option>
+                    <option value="S. Korea">Coréia do Sul</option>
+                    <option value="Spain">Espanha</option>
+                    <option value="USA">Estados Unidos</option>
+                    <option value="Philippines">Filipinas</option>
+                    <option value="France">França</option>
+                    <option value="Georgia">Geórgia</option>
+                    <option value="Ghana">Gana</option>
+                    <option value="Greece">Grécia</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Irã</option>
+                    <option value="Iraq">Iraque</option>
+                    <option value="Israel">Israel</option>
                     <option value="Italy">Itália</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japão</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="New Zealand">Nova Zelândia</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Paraguay">Paraguai</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Poland">Polônia</option>
+                    <option value="Puerto Rico">Porto Rico</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="UK">Reino Unido</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Sweden">Suécia</option>
+                    <option value="Switzerland">Suiça</option>
                     <option value="Turkey">Turquia</option>
-                     
+                    <option value="Ukraine">Ucrânia</option>
+                    <option value="Uruguay">Uruguai</option>
+                    <option value="Venezuela">Venezuela</option>
+
                 </select>
             </div>
         </div>
 
 
-        <div class="row justify-content-center mt-3">
+        <div class="row justify-content-center mt-1">
             <div class="col-md-12 col-12">
                 <div class="card">
                     <div class="card-header text-center">
@@ -46,14 +85,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-12">
+            <div class="col-md-12 col-12 text-center mt-3">
+                <button class="btn btn-outline-info" id="change">Mudar Visualização</button>
                 <div class="card-body">
-                    <canvas id="chart" height="180"></canvas>
+                    <canvas id="chart" height="150"></canvas>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
-    
+
 </body>
 
 <%- include('complements/footer.ejs') %>

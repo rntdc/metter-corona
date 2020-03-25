@@ -59,3 +59,16 @@ function spawnChart(){
 
     aux++;
 }
+
+
+document.getElementById('change').addEventListener('click', function() {
+    if (window.chart.options.circumference === Math.PI) {
+        window.chart.options.circumference = 2 * Math.PI;
+        window.chart.options.rotation = -Math.PI / 2;
+    } else {
+        window.chart.options.circumference = Math.PI;
+        window.chart.options.rotation = -Math.PI;
+    }
+
+    window.chart.update();
+});
