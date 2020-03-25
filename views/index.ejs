@@ -1,30 +1,8 @@
 <%- include('complements/header.ejs') %>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">CoronaMetter</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <div class="container">
-        <div class="form-group row justify-content-center mt-5">
+        <div class="form-group row justify-content-center mt-2">
             <label for="selectCountry" class="col-sm-1 col-form-label">País</label>
             <div class="col-sm-4 col-md-3">
                 <select name="" id="country" class="form-control" onchange="fetchData()">
@@ -76,7 +54,6 @@
             </div>
         </div>
 
-
         <div class="row justify-content-center mt-1">
             <div class="col-md-12 col-12">
                 <div class="card">
@@ -85,22 +62,37 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-12 text-center mt-3">
+            <div class="col-md-12 col-12 text-center mt-3" >
                 <button class="btn btn-outline-info" id="change">Mudar Visualização</button>
                 <div class="card-body">
-                    <canvas id="chart" height="150"></canvas>
+                    <canvas id="chart" height="220px"></canvas>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="card text-center" style="position: absolute; bottom: 0; width: 100%">
+
+        <div class="row mt-3" id="health">
+            <div class="text-center col-md-4 col-12 pb-3">
+                <img src="img/espirro.png" class="rounded" alt="...">
+                <h3>Cubra o nariz e boca ao espirrar ou tossir.</h3>
+            </div>
+            <div class="text-center col-md-4 col-12 pb-3">
+                <img src="img/objetos.png" class="rounded" alt="...">
+                <h3>Não compartilhe objetos pessoais.</h3>
+            </div>
+            <div class="text-center col-md-4 col-12 pb-3 justify-content-center">    
+                <img src="img/janela.png" class="rounded" alt="...">
+                <h3>Mantenha os ambientes bem ventilados.</h3>
+
+            </div>
+        </div>
+    </div>
+    <div class="card text-center" style="position: relative; bottom: 0; width: 100%">
         <div class="card-body" id="footer">
             <blockquote class="blockquote mb-0">
-                <p>Respeite o próximo e fique em casa! :) Lave as mãos e beba água!</p>
-                <footer class="blockquote-footer">Renato -  <a href="https://github.com/rntdc"><img
-                            src="/img/git.png"> rntdc</a><a href="https://twitter.com/rntdcc"><img
-                                src="/img/twitter.png"> @rntdcc</a></p>
+                <p>Respeite o próximo e fique em casa!</p>
+                <footer class="blockquote-footer">Renato <a href="https://github.com/rntdc"><img src="/img/git.png">
+                        rntdc</a><a href="https://twitter.com/rntdcc"><img src="/img/twitter.png"> @rntdcc</a></p>
                 </footer>
             </blockquote>
         </div>

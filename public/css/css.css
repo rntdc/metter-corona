@@ -14,3 +14,13 @@
     margin-left: 10px;
     width: 25px;
 }
+
+#health img{
+    width: 150px;
+    margin: 20px 0px;
+}
+
+#health h3{
+    padding: 0px 30px;
+}
+

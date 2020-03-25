@@ -31,7 +31,6 @@ function fetchData(){
         critical = country.critical;
 
         
-        console.log(country);
         spawnChart();
     });
 }
