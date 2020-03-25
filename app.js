@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.listen(7000, function (err) {
+app.listen(3000, function (err) {
     if(err){
         console.log('Erro na inicializacao')
     } else{
