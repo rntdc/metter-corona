@@ -5,3 +5,5 @@ Projeto que utiliza uma api para mostrar os dados atuais sobre a situação do C
 - Express
 - EJS
 - ChartJS
+
+Deploy para testes: coronamett-com.umbler.net
