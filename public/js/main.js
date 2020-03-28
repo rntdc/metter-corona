@@ -56,6 +56,9 @@ function spawnChart(){
         }
     });
 
+    document.getElementById("cases").innerHTML = cases;
+    document.getElementById("deaths").innerHTML = deaths;
+    document.getElementById("recovered").innerHTML = recovered;
     aux++;
 }
 
