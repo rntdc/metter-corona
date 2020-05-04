@@ -3,8 +3,7 @@ Projeto que utiliza uma api para mostrar os dados atuais sobre a situação do C
 
 Finalizado
 
-#Stack
-
+# Stack
 - Bootstrap
 - Express
 - EJS
