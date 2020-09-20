@@ -8,5 +8,3 @@ Finalizado
 - Express
 - EJS
 - ChartJS
-
-Deploy para testes: coronamett-com.umbler.net
