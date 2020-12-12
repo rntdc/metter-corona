@@ -1,6 +1,6 @@
 ### Sobre
 
-Primeiro projeto que realizei sozinho utilizando Node, onde utiliza uma api para mostrar os dados atuais sobre a situação do COVID-19 em cada país, através de gráficos que possuem dados como curados, infectados e mortos.
+Primeiro projeto que realizei sozinho utilizando Node, onde aproveita de uma api para mostrar os dados atuais sobre a situação do COVID-19 em cada país, através de gráficos que possuem dados como curados, infectados e mortos.
 
 
 # Stack
