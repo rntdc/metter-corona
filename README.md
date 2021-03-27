@@ -25,7 +25,7 @@ Primeiro projeto que realizei sozinho utilizando Node, onde aproveita de uma api
 $ git clone https://github.com/rntdc/metter-corona
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd github-explorer
+$ cd metter-corona
 
 # Instale as dependências
 $ npm install ou yarn
